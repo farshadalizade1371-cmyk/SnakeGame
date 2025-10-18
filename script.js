@@ -511,7 +511,7 @@ function showToast(message) {
 }
 
 function playSound(soundFile, callback) {
-    const audio = new Audio(`/mar/file/music/${soundFile}`);
+    const audio = new Audio(`${soundFile}`);
     audio.play();
 
     audio.onended = () => {
@@ -520,3 +520,4 @@ function playSound(soundFile, callback) {
         }
     };
 }
+
